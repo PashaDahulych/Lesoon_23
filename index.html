@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson_23</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header"></header>
+		<main class="page">
+			<div class="page__containere">
+				<div class="page__part-one">
+					<p><mark>console.log( '35' + - "22" );</mark> - помилка, очікуваний результа не вийде. Оператор додавання єдтний оператор, який не змінює тип даних</p>
+					<p><mark>console.log( '35' * '22' );</mark> - вірне трердження</p>
+					<p><mark>console.log( '558' > 22++ );</mark> - викличе помилку. Інкремент застосовується тільки зі змінними</p>
+
+					<p><mark>let usersCounter = 0;<br>let newUsers = usersCounter;<br>console.log( newUsers );</mark> - помилка, ікремент повинен бути записаний перед змінною і тобі б ми отримали бажаний результат </p>
+
+					<p><mark>console.log( !false && 11 || 18 || '' );</mark> - не вірно, отримано результат 11. Оператор так знайшов кілька правд, то далі код не читався </p>
+					<p><mark>let name = 0;<br>console.log( name ?? "Без імені" );</mark> - поветрає 0, тому що перший агрумент не null </p>
+				</div>
+				<div class="page__part-two">
+					<p><mark>if ( 1 === "1" ) {<br>console.log( 'Іcтина' );<br>} else {<br>	console.log( 'Брехня' );<br>}</mark> - не вірно, оператор === не перетворює файли в один тип </p>
+				
+					<p><mark>if ( 5 == "5" ) {<br>console.log( 'Іcтина' );<br>} else {<br>	console.log( 'Брехня' );<br>}</mark> - вірно, оператор == перетворює файли в один тип </p>
+
+					<p><mark>"let message = ( 92 > '11' && 58 менше-валідатор видає чомусь помилку на знак менше 100 ) ? 'Істина' : 'Брехня'; <br>console.log( message );</mark> - вірно </p>
+
+					<p><mark>if ( 0 ) {<br>	console.log( 'Брехня' );<br>} else if (" ") {<br>	console.log( 'Іcтина' );<br>}</mark> - вірно</p>
+				</div>
+			</div>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
